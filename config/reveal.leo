@@ -21,7 +21,7 @@
 <v t="leo.20180827201621.6" a="E"><vh>body</vh>
 <v t="leo.20180827201621.7" a="E"><vh>reveal div</vh>
 <v t="leo.20180827201621.8" a="E"><vh>slides div</vh>
-<v t="leo.20180827201621.9" a="E"><vh>封面投影片</vh>
+<v t="leo.20180827201621.9"><vh>封面投影片</vh>
 <v t="leo.20180827201621.10"><vh>封面投影片內容</vh></v>
 </v>
 <v t="leo.20181108190243.1"><vh>week1</vh>
@@ -44,7 +44,9 @@
 </v>
 <v t="leo.20181108195842.1" a="E"><vh>week7</vh>
 <v t="leo.20181108195842.2"><vh>7</vh></v>
-<v t="leo.20181108200359.1"><vh>7-1</vh></v>
+</v>
+<v t="leo.20181108203653.1" a="E"><vh>week7-1</vh>
+<v t="leo.20181108203653.2"><vh>7-1</vh></v>
 </v>
 <v t="leo.20181108200559.1" a="E"><vh>week8</vh>
 <v t="leo.20181108200559.2"><vh>8</vh></v>
@@ -53,7 +55,7 @@
 <v t="leo.20180827201621.12"><vh>投影片快捷鍵</vh></v>
 </v>
 <v t="leo.20180827201621.13" a="E"><vh>各式內容引用範例</vh>
-<v t="leo.20180827201621.14" a="E"><vh>導入數學符號與方程式</vh>
+<v t="leo.20180827201621.14"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180827201621.15"><vh>LaTeX 格式方程式</vh></v>
 </v>
 <v t="leo.20180827201621.16" a="E"><vh>導入縮排程式碼</vh>
@@ -477,13 +479,6 @@ Pelican blog 重複 slug 設定處理.
 
 
 </t>
-<t tx="leo.20181108200359.1">#github遠端故障
-
-因為網路故障且儲存的倉儲位置連帶故障,導致多數人進行遠端傳送,有些許的障礙出現,但近端扔有更動.
-
-可以使用gitlab , bitbucket , fossil scm 這些額外可作為github遠端以外的連結.
-
-</t>
 <t tx="leo.20181108200559.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -500,5 +495,20 @@ Pelican blog 重複 slug 設定處理.
 準備期中後專題的分組及專題製作
 
 雲端:https://en.wikipedia.org/wiki/Cloud_computing</t>
+<t tx="leo.20181108203653.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108203653.2">#github遠端故障
+
+因為網路故障且儲存的倉儲位置連帶故障,導致多數人進行遠端傳送,有些許的障礙出現,但近端扔有更動.
+
+避免相同的衝突再次發生可以使用gitlab , bitbucket , fossil scm 這些額外可作為github遠端以外的連結.
+</t>
 </tnodes>
 </leo_file>
