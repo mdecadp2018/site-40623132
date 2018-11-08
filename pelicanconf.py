@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = '40623132趙家傑'
-SITENAME = '機械設計工程系設計二甲 Blog  '
+SITENAME = '機械設計工程系設計二甲 Blog'
 # 不要用文章所在目錄作為類別
 USE_FOLDER_AS_CATEGORY = False
 
