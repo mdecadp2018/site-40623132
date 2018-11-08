@@ -21,8 +21,33 @@
 <v t="leo.20180827201621.6" a="E"><vh>body</vh>
 <v t="leo.20180827201621.7" a="E"><vh>reveal div</vh>
 <v t="leo.20180827201621.8" a="E"><vh>slides div</vh>
-<v t="leo.20180827201621.9" a="E"><vh>封面投影片</vh>
+<v t="leo.20180827201621.9"><vh>封面投影片</vh>
 <v t="leo.20180827201621.10"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20181108190243.1"><vh>week1</vh>
+<v t="leo.20181108190243.2"><vh>1</vh></v>
+</v>
+<v t="leo.20181108194244.1" a="E"><vh>week2</vh>
+<v t="leo.20181108194244.2"><vh>2</vh></v>
+</v>
+<v t="leo.20181108194741.1"><vh>week3</vh>
+<v t="leo.20181108194741.2"><vh>3</vh></v>
+</v>
+<v t="leo.20181108194945.1" a="E"><vh>week4</vh>
+<v t="leo.20181108194945.2"><vh>4</vh></v>
+</v>
+<v t="leo.20181108195324.1"><vh>week5</vh>
+<v t="leo.20181108195324.2"><vh>5</vh></v>
+</v>
+<v t="leo.20181108195528.1"><vh>week6</vh>
+<v t="leo.20181108195528.2"><vh>6</vh></v>
+</v>
+<v t="leo.20181108195842.1"><vh>week7</vh>
+<v t="leo.20181108195842.2"><vh>7</vh></v>
+<v t="leo.20181108200359.1"><vh>7-1</vh></v>
+</v>
+<v t="leo.20181108200559.1" a="E"><vh>week8</vh>
+<v t="leo.20181108200559.2"><vh>8</vh></v>
 </v>
 <v t="leo.20180827201621.11" a="E"><vh>快捷鍵</vh>
 <v t="leo.20180827201621.12"><vh>投影片快捷鍵</vh></v>
@@ -326,5 +351,156 @@ make.start()
 
 						
 </t>
+<t tx="leo.20181108190243.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108190243.2">#第一週
+
+每週帶筆記本、耳機、USB及建立Onshape帳號
+
+利用P37 中的GIT建立個人Github Pages 網站
+
+領取個人其中作業網誌
+
+
+</t>
+<t tx="leo.20181108194244.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108194244.2">#第二週
+
+期中作業倉儲, 每週拍攝操作實習影片, 將教材內容與使用心得放入個人的網站、簡報與網誌中
+
+利用 git checkout 內的 master 分支切換到 gh-pages
+
+以 python wsgi.py 啟動 CMSimfly 動態網站, 以內定的 admin 管理者密碼在近端進行改版.
+
+Onshape 課程使用說明與英譯字典的使用</t>
+<t tx="leo.20181108194741.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108194741.2">#第三週
+
+Onshape 練習
+
+Git 的指令練習和功能介紹
+
+git init 讓資料夾出現.git檔案
+
+</t>
+<t tx="leo.20181108194945.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108194945.2">#第四週
+
+Onshape 課程說明和字典使用方法
+
+解決Cmsimfly 的錯誤
+
+解決在近端更新資料會出現Builtins IndexError的問題
+
+
+</t>
+<t tx="leo.20181108195324.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108195324.2">#第五週
+
+Pelican blog 重複 slug 設定處理.
+
+圖檔或影音檔變成標題造成近端錯誤 將Config裡的Content刪除 圖檔即可修復
+
+</t>
+<t tx="leo.20181108195528.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108195528.2">#第六週
+
+
+利用lab-booking-cdlab說明管理內容流程
+
+利用 CMSimfly.leo升級最新的flaskapp.py並且利用 Leo Editor 的 @auto 節點指令與 @clean 節點指令, 重新配置 cmsimfly.leo 開發專案檔.
+
+說明有關人事時地物等關鍵內容的架構安排，及課程行事曆的講解</t>
+<t tx="leo.20181108195842.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108195842.2">#第七週
+
+
+在使用 CMSimfly 過程, 無法正確解讀 config/content.htm 時, 可更新程式碼或回報問題的流程.
+
+如何利用 Virtualbox 安裝 Ubuntu 18.04.1 伺服器, 目的在自行建立 Fossil SCM
+
+
+
+</t>
+<t tx="leo.20181108200359.1">github遠端故障
+
+因為網路故障且儲存的倉儲位置連帶故障,導致多數人進行遠端傳送,有些許的障礙出現,但近端扔有更動.
+
+避免相同的衝突再次發生,有了因應的措施
+
+可以使用gitlab , bitbucket , fossil scm 這些額外可作為github遠端以外的連結.
+
+</t>
+<t tx="leo.20181108200559.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181108200559.2">#第八週
+
+將期中考前的課程內容整理好 Onshape練習妥當
+
+準備期中後專題的分組及專題製作
+
+雲端:https://en.wikipedia.org/wiki/Cloud_computing</t>
 </tnodes>
 </leo_file>
