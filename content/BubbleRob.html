@@ -1,0 +1,116 @@
+<!doctype html>
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>計算機程式教材</title> <link rel="stylesheet" type="text/css" href="./../static/cmsimply.css">
+<link rel="icon" href="./../static/favicon.ico" type="image/x-icon" />
+
+<script type="text/javascript" src="./../static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCSharp.js"></script>
+<link type="text/css" rel="stylesheet" href="./../static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- for LaTeX equations 暫時不用
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+-->
+<!-- 暫時不用
+<script src="./../static/fengari-web.js"></script>
+<script type="text/javascript" src="./../static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img {
+    border: 3px solid red;
+}
+</style>
+
+<script src="./../static/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("ul.topmenu> li:has(ul) > a").append('<div class="arrow-right"></div>');
+    $("ul.topmenu > li ul li:has(ul) > a").append('<div class="arrow-right"></div>');
+});
+</script>
+
+</head><header><h1>40623132</h1> <confmenu>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="sitemap.html">Site Map</a></li>
+<li><a href="./../reveal/index.html">reveal</a></li>
+<li><a href="./../blog/index.html">blog</a></li>
+
+</ul>
+</confmenu></header>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='簡介.html'>簡介</a><ul><li><a href='CMSimfly 網站.html'>CMSimfly 網站</a><li><a href='reveal 投影片.html'>reveal 投影片</a><li><a href='pelican 網誌.html'>pelican 網誌</a></li></ul><li><a href='組員操作影片.html'>組員操作影片</a><ul><li><a href='Week1.html'>Week1</a><li><a href='Week2.html'>Week2</a><li><a href='Week3.html'>Week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a><li><a href='Week7.html'>Week7</a><li><a href='Week8.html'>Week8</a></li></ul><li><a href='Python 手冊.html'>Python 手冊</a><li><a href='OnShape 手冊.html'>OnShape 手冊</a><li><a href='Fusion 360.html'>Fusion 360</a><li><a href='V-rep.html'>V-rep</a><li><a href='零組件尺寸分析.html'>零組件尺寸分析</a><li><a href='建立可攜程式系統.html'>建立可攜程式系統</a><li><a href='BubbleRob.html'>BubbleRob</a><li><a href='簡化網格.html'>簡化網格</a></li></ul></nav><section>建立可攜程式系統 << <a href='建立可攜程式系統.html'>Previous</a> <a href='簡化網格.html'>Next</a> >> 簡化網格<br /><h1>BubbleRob</h1>
+<p><span></span><span>1.建立BubbleRob本體<br/>新增一個Sphere，X-size為0.2(單位為m)<br/>在object common properties下的object special properties將Collidable、Measurable、Renderable、Detectable都打勾，將本體位置設定在Z軸(Along Z)0.02(須確認本體是照world移動)接著在選單雙擊Sphere將物件名稱改為BubbleRob就完成本體設定。</span></p>
+<p><span><br/></span><span><img alt="" height="111" src="./../images/1.png" width="362"/></span></p>
+<p><span><br/>2.建立Proxmity sensor<br/>在選單中建立一個Proximity sensor且選為Cone type將sensor利用旋轉功能在Around Y及Z輸入90位置為X-coord輸入0.1及Z-coord輸入0.12</span></p>
+<p><span><img alt="" height="201" src="./../images/2.png" width="381"/><br/><img alt="" height="202" src="./../images/3.png" width="376"/><br/></span></p>
+<p><span>接著設定sensor感應範圍，在選單點擊感測器符號開啟它的設定框，點擊show volume <br/>parameter開啟選單設定Offset=0.005、Angle=30、Range=0.15</span></p>
+<p><span><br/><img alt="" height="626" src="./../images/4 (1).png" width="384"/><br/></span></p>
+<p><span><br/>點擊Show detection parameters，將"Don't allow detections if distance smaller than"選項取消打勾。<br/>將感測器名稱設定為bubbleRob_sensingNose，就完成感測器設定了。<br/>在Scene hireachy(場景等級)將完成設定的sensor放在bubbleRob下最後將兩項物件Edit-&gt;"Make last selected object parent"連結成一個物件。<br/><br/>3.建立bubbleRob的輪子<br/>建立一個cylinder尺寸為(0.08,0.08,0.02)，跟本體一樣將object common properties內的特殊屬性都打開，設定位置(0.05,0.1,0.04)和旋轉(-90,0,0)，此物件命名為bubbleRob_leftWheel，然後將完成的物件複製一份且將位置參數Y設定為-0.1，此物件命名為bubbleRob_RightWheel<br/>設定joint(motor)<br/>Add-&gt;joint-&gt;Revolute建立一個軸，建立完成按住ctrl選擇剛剛的bubbleRob_leftWheel然後在postion及 orientation內選擇apply to selection來複製輪子的參數，這樣軸的位置就會跟左邊輪子一樣了。<br/>點擊開啟軸參數的設定框，將 Show dynamic parameters內的enable the motor以及底下的Lock motor when target velocity is zero都打勾，完成左邊輪軸設定後，用同樣方式製作右輪軸。<br/>最後將輪子層級放置在輪軸底下，輪軸層級則置於本體下</span></p>
+<p><span><br/><img alt="" height="85" src="./../images/5.png" width="192"/><br/></span></p>
+<p><span><br/><br/>4.建立slider<br/>開始模擬後發現機器人會向後翻轉，因為少了第三個接地點<br/>建立一個圓形物件(設定0.05)，一樣打開所有特殊屬性，將此物件命名為 bubbleRob_slider，在shape dynamics properties裡將物件設定為無摩擦。<br/>摩擦力相關的係數都調成0<br/><br/>接著建立<strong>Force sensor</strong>命名為<strong>bubbleRob_connection</strong>，將它往上提0.05<br/>，再跟剛剛的滑塊接合成一個物件，這個物件的位置設定X=(-0.07)，此物件的層級則放在bubbleRob底下，這樣就完成第三個接地點了，但是執行模擬後會發現滑塊會微微震動，那是因為滑塊跟本體互相碰撞了，為了避免這種狀況，開啟滑塊及本體的<strong>shape dynamics properties</strong>將<strong>local respondable mask</strong>分別設定為00001111及<br/>11110000這樣兩個物件就不會互相碰撞了。<br/>滑塊設定</span></p>
+<p><span><br/><img alt="" height="123" src="./../images/6.png" width="504"/><br/></span></p>
+<p><span><br/>本體設定<br/><br/></span></p>
+<p><img alt="" height="149" src="./../images/7.png" width="383"/></p>
+<p><span><br/></span><span>5.增加stability及Target velocity測試<br/>點擊dynamic對話框內的M=M*2選項三次將輪子以及第三個支點的重量變成8倍，接著在軸的dynamic對話框將Target velocity設至50後開始演算，會發現bubbleRob會穩定的直線前進最後掉出平台，然後再將速度重置為0，測試就完成了。<br/><br/><br/>6.collection object及Calculation module properties<br/>在collection對話框內用Add new collection，新增的集合是空的，將列表上的bubbleRob選擇後點選Add加進collection，命名為 bubbleRob_collection ，這樣bubbleRob底下的零件都包含集合裡。<br/>在選單點選Calculation module在distance下Add new distance object，選擇剛剛新增的bubbleRob_collection及all other measurable objects in the scene，<br/>命名為bubbleRob_distance，這個設定在之後會測量本體以及其他可碰撞物件之間的最小距離。</span></p>
+<p><span><br/></span><span><img alt="" height="138" src="./../images/8.png" width="398"/></span></p>
+<p><span><br/>7.Graph設定<br/>新增一個Graph命名為bubbleRob_graph在列表上放置於bubbleRob底下將graph位置設定在(0,0,0.005)開啟graph properties，將Display XYZ-planes選項取消打勾，接著Add new data stream to record，視窗上方(Data stream type)選擇Object: absolute x-position下方(Object / item to record)選擇bubbleRob_graph，在Data stream recording list會出現剛剛新增的設定，Y軸跟Z軸也用同樣方式做設定。<br/>為了能夠測量機器人跟環境之間的最小距離再新增一個設定上面選擇Distance:segment length下方選擇bubbleRob_distance。<br/><br/>將XYZ軸及距離設定分別命名為bubbleRob_xpos、bubbleRob_ypos、bubbleRob_zpos、 bubbleRob_obstacle_dist。</span></p>
+<p><span><br/><img alt="" height="600" src="./../images/12.png" width="379"/><br/></span></p>
+<p><span><br/>選擇bubbleRob_xpos在底下的<strong>Time graph properties</strong>將Visible取消掉，其他兩軸也用相同方式操作。<br/>接著在Edit 3D curves點選 Add new curve設定如圖</span></p>
+<p><span><br/><img alt="" height="145" src="./../images/14.png" width="282"/><br/></span></p>
+<p><span><br/>Curve width設定為4，然後改成Relative to world，完成後測試就會發現機器人的路徑會以線顯示在螢幕上。<br/><br/><br/>8.建立cylinder<br/>增加數個(0.1,0.1,0.2)的cylinder包圍bubbleRob，將cylinder的特殊屬性參數全部打開，移動cylinder途中按著shift可以進行更細微的移動，按住ctrl則可以讓物件可以在正交方向移動。<br/><br/>9.model設定<br/>選擇bubbleRob後在<strong>object common properties</strong>內將<strong>Object is model base</strong>和<strong>Object/model can transfer or accept DNA</strong>都打勾，這樣bubbleRob邊界框就包含底下所有的物件在內了。</span></p>
+<p><span><br/><img alt="" height="618" src="./../images/15.png" width="388"/><br/></span></p>
+<p><span><br/>接著將兩個joint、sensor跟graph都選起來然後將參數設定<strong>ignored by model bounding box</strong>，讓模型的邊界框略過sensor跟joint然後將joint跟sensor的camera visibility layer 2取消打勾改為打勾<br/>10，這樣在畫面上就不會看見軸跟sensor範圍了，最後將感測器、兩個輪子、支點、圖表的<strong>Select base of model instead</strong>都打勾，這項設定讓我們只能一次移動整個機器人而不是單個零件，能避免定位好的零件被移動。</span></p>
+<p><span><br/><img alt="" height="215" src="./../images/16.png" width="382"/><br/></span></p>
+<p><span><br/>10.感測器(vision sensor)<br/>增加一個新的感測器，位置、角度跟BubbleRob's proximity sensor同樣，在畫面上點選增加Perspective type的sensor，然後放到proximity sensor底下，新的sensor設定如下</span></p>
+<p><span><img alt="" height="542" src="./../images/17.png" width="385"/></span></p>
+<p><span><br/></span><span>著點擊Show filter dialog開啟filter對話框，選擇Edge detection on work image然後按Add，新增的過濾組件要上移至第二層，移動完後點擊兩下剛剛設定的組件將Threshold(閾值)設定為0.2，設定到這邊基本上就完成了。</span></p>
+<p><span><br/><img alt="" height="368" src="./../images/18.png" width="385"/><br/></span></p>
+<p><span><br/>完成sensor設定後新增一個floating view然後在它上面右鍵選擇(view-&gt;Associate view with selected vision sensor)將視窗綁定到剛剛設定完的sensor上(要確保sensor是被選擇的狀況)，接著試著開始模擬，視窗上能夠看見目標就成功了。</span></p>
+<p><span><br/><img alt="" height="219" src="./../images/19.png" width="374"/><br/></span></p>
+<p><span><br/>11.程式:位於工具列的script功能可以編輯code</span></p>
+<p><span><br/><img alt="" height="49" src="./../images/20.png" width="49"/><br/></span></p>
+<p><span><br/>最後的步驟要將code放進完成的模型內，選擇bubbleRob點選(Add-&gt;Associated child script --&gt; Non threaded)</span></p>
+<p><span><br/><img alt="" height="328" src="./../images/21.png" width="491"/><br/></span></p>
+<p><span><br/>新增一個<strong>non-threaded child script</strong>，接著點選bubbleRob旁邊的圖示就能打開script，將code複製在原本的code後面關掉視窗就完成了。</span></p>
+<p><span><br/><img alt="" height="62" src="./../images/22.png" width="198"/><br/></span></p>
+<p><span><br/>需注意code內部</span></p>
+<p><span></span></p>
+<p><span><br/> <img alt="" height="221" src="./../images/23.png" width="1045"/></span></p>
+<p><span><br/>leftMotor=sim.getObjectHandle("bubbleRob_leftMotor") -- Handle of the left motor<br/>rightMotor=sim.getObjectHandle("bubbleRob_rightMotor") -- Handle of the right motor<br/>noseSensor=sim.getObjectHandle("bubbleRob_sensingNose") -- Handle of the proximity sensor<br/>紅框內的名稱，如果大小寫或是名稱不同程式就沒辦法成功執行。</span></p>
+<p><span><br/></span><span><img alt="" height="858" src="./../images/24.png" width="1461"/><br/></span></p>
+<p><span>bubbleRob在模擬時會自動避開路徑上的物件，且畫面有能調節速度的面板。<br/><br/></span></p><br />建立可攜程式系統 << <a href='建立可攜程式系統.html'>Previous</a> <a href='簡化網格.html'>Next</a> >> 簡化網格</section></div></body></html>
